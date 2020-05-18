@@ -24,9 +24,12 @@
 
 %%INICIO abstract
 \begin{abstract}
-Aqui ira el abstract
+The context of the information society has led to the need for better, faster and more efficient methods 
+to extract and transform the data of an organization into information and distribution along the value chain.
 \\
-Aqui ira el abstract
+In this article we will be able to detect the basic concepts about business intelligence (Business Intelligence) 
+where it responds to it as a need and we can understand in a first approach that it is an evolution of decision 
+support systems (DSS).
 \end{abstract}
 %%FIN abstract
 
@@ -35,10 +38,14 @@ Aqui ira el abstract
 
 %%INICIO Resumen
 \section{Resumen}
-aqui va el resumen
+El contexto de la sociedad de la información a propiciado tener la necesidad de mejores, más rápido y eficientes 
+métodos para extraer y transformar los datos de una organización en información y distribuirla a lo largo de la 
+cadena de valor.
 \\
 \\
-aqui va el resumen
+En este articulo podremos apreciar los conceptos base acerca de la inteligencia de negocio (Business Intelligence)
+ donde responde a esta como una necesidad y podemos entender en una primera aproximación que es una 
+evolución de los sistemas de soporte a la decisiones (DSS).
 %%FIN Resumen
 
 
@@ -52,6 +59,16 @@ cadena de valor.
 En este articulo podremos apreciar los conceptos base acerca de la inteligencia de negocio (Business Intelligence)
  donde responde a esta como una necesidad y podemos entender en una primera aproximación que es una 
 evolución de los sistemas de soporte a la decisiones (DSS).
+\\
+\\
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA %FALTA TERMINAR
+\\
+\\
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA %FALTA TERMINAR
+\\
+\\
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA %FALTA TERMINAR
+
 %%FIN Introducción
 
 
@@ -59,41 +76,64 @@ evolución de los sistemas de soporte a la decisiones (DSS).
 \section{Marco Teórico}
 
 %%----------------------------------------------------------------------------------------------------------------------------------------------------------
-	\subsection{Inteligencia de Negocios (BI)}
+	\subsection{\textbf{Inteligencia de Negocios (BI)}}
 	Hay que tomar en cuenta que este concepto Business Intelligence es un tema que viene desde octubre de 1958 
 por Hans Peter Luhn (Investigador de IBM). Este concepto ha evolucionado aunando diferentes tecnologías, metodologías
  y términos.\cite{referenciarobles1}
 \\
 \\
-Business Intelligence  es un conjunto de metodologías, aplicaciones, prácticas y capacidades enfocadas a la creación
- y administración de información que permite tomar las mejores decisiones a los usuarios en una organización.
+Según el glosario de términos de Gartner (2012) se extrae la siguiente definición:
+“BI es un proceso interactivo para explorar y analizar información estructurada sobre un área (normalmente almacenada en un “datawarehouse”), para descubrir tendencias o patrones, a partir de los cuales derivar ideas y extraer conclusiones. El proceso de BI incluye la comunicación de los descubrimientos y efectuar los cambios. Las áreas incluyen clientes, proveedores, productos, servicios y competidores.” \cite{referenciarobles1}
 \\
 \\
-Algunas de las tecnologías que forman parte de Business Intelligence son:
-\\
-\\
+Según Vitt (2002):
+“El BI es usado por diferentes usuarios y desarrolladores de software para distinguir un amplio rango de tecnologías, plataformas de software, aplicaciones específicas y procesos. Se utiliza este término desde tres diferentes perspectivas:
 	\begin{itemize}
-	\item Data wareHouse 
-	\item Reporting 
-	\item Análisis OLAP
-	\item Análisis Visual
-	\item Análisis Predictivo 
-	\item Cuadro de mando
-	\item Cuadro de mando integral
-	\item Minera de datos 
-	\item Gestión de rendimiento
-	\item Reglas de negocio
-	\item Dashboards 
-	\item Integracion de Datos
+	\item Tomar mejores decisiones rápidamente.
+	\item Convertir los datos en información.
+	\item Utilizar un método razonable para la gestión empresarial.”  \cite{referenciarobles1} \\
 	\end{itemize}
 
+Business Intelligence  es un conjunto de metodologías, aplicaciones, prácticas y capacidades enfocadas a la creación
+ y administración de información que permite tomar las mejores decisiones a los usuarios en una organización.
 
+	\subsubsection{\textbf{Componentes de una Arquitectura de BI}}
+
+	Los componentes son:
+
+	\begin{itemize}
+	\item Fuentes de información, de las cuales partiremos para alimentar de información el datawarehouse. Las fuentes de información a las que podemos acceder son: de los sistemas operacionales o transaccionales, que incluyen aplicaciones desarrolladas a medida, ERP, CRM, SCM, etc. Sistemas de información departamentales: previsiones, presupuestos, hojas de cálculo, etcétera.
+	\item Proceso ETL de extracción, transformación y carga de los datos en el datawarehouse. Antes de almacenar los datos en un datawarehouse, éstos deben ser transformados, limpiados, filtrados y redefinidos. Normalmente, la información que tenemos en los sistemas transaccionales no está preparada para la toma de decisiones.
+	\item El propio datawarehouse o almacén de datos, con el Metadata o Diccionario de datos. Se busca almacenar los datos de una forma que maximice su flexibilidad, facilidad de acceso y administración.
+	\item El motor OLAP, que nos debe proveer capacidad de cálculo, consultas, funciones de planeamiento, pronóstico y análisis de escenarios en grandes volúmenes de datos.
+	\item Las herramientas de visualización, que nos permitirán el análisis y la navegación a través de los mismos.
+
+	\end{itemize}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=14cm]{./IMAGENES/componentes} 
+		\caption{Componentes de Business Intelligence}
+	\end{center}
+\end{figure}
 
 %%****
-	\subsection{Beneficios de un sistema de Inteligencia de Negocio (BI)}
+
+\subsubsection{\textbf{El ciclo de la Inteligencia de Negocios}}
+
+La Inteligencia de Negocios en una plataforma de administración del desempeño que representa al ciclo en el que las empresas establecen sus objetivos, analizan sus progresos, reflexionan, actúan, miden su éxito y empiezan una nueva fase. \\ \\Su ciclo se compone de cuatro etapas a saber: Análisis, reflexión, acción y medición. (Peña, 2006).
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=12cm]{./IMAGENES/ciclo_BI} 
+		\caption{Ciclo de Inteligencia de Negocios}
+	\end{center}
+\end{figure}
+
+%%****
+	\subsubsection{\textbf{Beneficios de un sistema de Inteligencia de Negocio (BI)}}
 	La implantación de estos sistemas de información proporciona diversos beneficios entre los que podemos destacar:
-\\
-\\
+
 	\begin{itemize}
 	\item Crear un circulo virtuoso de la información (Donde los datos se transforman en información que permitirá 
 		generar conocimiento para una toma de decisiones que se traducirán en mejores resultados y que 
@@ -108,11 +148,10 @@ Algunas de las tecnologías que forman parte de Business Intelligence son:
 		lo superfluo, acceder más rápido a la información, tener mayor agilidad en la toma de decisiones.
 	\end{itemize}
 %%****
-	\subsection{La necesidad de la Inteligencia de Negocio}
+	\subsubsection{\textbf{La necesidad de la Inteligencia de Negocio}}
 	Existen situaciones en las que la implantación de un sistema Business Intelligence  resulta adecuada. Podríamos destacar 
 	entre las que existen son:
-\\
-\\
+
 	\begin{itemize}
 	\item La toma de decisiones se realiza de forma intuitiva en la organización resultados y que generarán nuevos datos).
 	\item Identificación de problema de calidad de información
@@ -123,15 +162,14 @@ Algunas de las tecnologías que forman parte de Business Intelligence son:
 	\item Existe demasiada información en la organización para ser analizada de la forma habitual (se alcanzó la masa crítica de datos).
 	\end{itemize}
 %%****
-	\subsection{Estrategia de Business Intelligence}
+	\subsubsection{\textbf{Estrategia de Business Intelligence}}
 	Desplegar un proyecto de inteligencia de negocio en una organización no es un proceso sencillo. Las buenas practicas dicen 
 	que para llegar a un buen puerto, es necesario tener una estrategia de inteligencia de negocio que coordine de forma efectiva 
 	las tecnologías, el uso, los procesos de madurez.\cite{referenciarobles2}
 %%****
-	\subsection{Ausencia de una estrategia de BI}
+	\subsubsection{\textbf{Ausencia de una estrategia de BI}}
 	Es posible detectar que no existe estrategia definida a través de los siguientes puntos:
-\\
-\\
+
 	\begin{itemize}
 	\item Los usuarios identifican al departamento de TI como el origen de problemas de inteligencia de negocios.
 	\item La dirección considera que la inteligencia de negocios es otro centro de coste.
@@ -151,10 +189,9 @@ Algunas de las tecnologías que forman parte de Business Intelligence son:
 
 
 %%****
-	\subsection{Ausencia de una estrategia de BI}
+	\subsubsection{\textbf{Desarrollo de una estrategia de BI}}
 	Desarrollar una estrategia de negocio es un proceso a largo plazo que incluyen múltiples actividades donde podríamos destacar:
-\\
-\\
+
 	\begin{itemize}
 	\item Crear un centro de competencia de BI. Tiene el objetivo de armonizar conocimientos en tecnologías, metodologías, estrategias 
 	con la presencia de un sponsor a nivel ejecutivo y analistas de negocio implicados y que tengan responsabilidades compartidas en 
@@ -172,7 +209,7 @@ Algunas de las tecnologías que forman parte de Business Intelligence son:
 
 
 %%-----------------------------------------------------------------------------
-	\subsection{Analitica de Negocio (BA) }
+	\subsection{\textbf{Analitica de Negocios (BA) }}
 	CONTENIDO
 	\begin{itemize}
 	\item 1. 
@@ -188,7 +225,8 @@ Algunas de las tecnologías que forman parte de Business Intelligence son:
 %%----------------------------------------------------------------------------------------------------------------------------------------------------------
 %%FIN Marco Teórico
 
-
+%COMPRACION
+\section{Comparación entre Inteligencia de Negocios (BI) y Analítica de Negocios (BA)}
 
 
 %CONCLUSIONES
@@ -218,6 +256,11 @@ CONTENIDO
 	\bibliographystyle{apalike}
 	\bibliography{BIBLIOGRAFIA}	
 %\citep{referenciarobles2}  
+
+
+% https://revistas.udistrital.edu.co/index.php/tia/article/view/4639/7094
+% http://revistas.unitru.edu.pe/index.php/PGM/article/view/193/199
+% http://www.spentamexico.org/v4-n2/4(2)%2016-52.pdf          ---> PAGINA 18
 
 
 \end{document}
